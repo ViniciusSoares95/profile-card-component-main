@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background: url(../images/bg-pattern-top.svg) -30em -60em, 
+    url(../images/bg-pattern-bottom.svg) 40em 15em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:hsl(185, 75%, 39%);
+}
+
+main{
+    width: 100%;
+    min-width: 100px;
+    display: flex;
+    justify-content: center; 
+}
+
+.container{
+    max-width: 323px;
+    max-height: 500px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 11px;
+    margin-top: 164px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.photocapa{
+    max-width: 323px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    
+}
+
+.photoperfil{
+    border-radius: 50px;
+    margin-top: -25px;
+}
+
+.boxName{
+    width: 55%;
+    height: 30px;
+    display: flex;
+    /*border: 1px solid #000;*/
+}
+
+.boxName, .name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #282834;
+}
+
+.boxName, .idade{
+    padding-left: 10px;
+    color: #73737b;
+}
+
+.localizacao{
+    width: 20%;
+    height: 20px;
+    /*border: 1px solid #000;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.localizacao, .city, p{
+    font-weight:200;
+    font-size: .8rem;
+    color: #73737b;
+}
+
+.numero, p{
+    text-align: center;   
+}
+
+.info{
+    width: 100%;
+    border-top: 1px solid hsl(0, 10%, 88%);
+    padding: 25px 40px 23px 39px;
+    margin-top: 19px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.seguidores, .likes, .foto{
+    width: 60px;
+}
+
+@media (max-width:1023px){
+    body{
+        background: url(../images/bg-pattern-top.svg) -20em -16em, 
+        url(../images/bg-pattern-bottom.svg) 12em 22em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:hsl(185, 75%, 39%);
+    } 
+}
+
